@@ -9,6 +9,13 @@ public class Geslacht {
         System.out.println("Wat is uw geslacht?");
         String geslacht = userInputScanner.nextLine();
 
+        if (geslacht.equalsIgnoreCase("man")) {
+            System.out.println("Dag meneer.");
+        } else if (geslacht.equalsIgnoreCase("mevrouw.")) {
+            System.out.println("Dag mevrouw.");
+        } else {
+            System.out.println("Dag persoon.");
+        }
         /*
         Hier boven heeft de gebruiker zijn geslacht ingevoerd. Print met behulp van een beslissingsstructuur (if/else)
         de volgende berichten:
